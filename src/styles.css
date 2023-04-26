@@ -1,0 +1,233 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+p {
+  margin: 0;
+}
+/* Navbar */
+.navbar-container > :first-child {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  /* background-color:blue */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.popover-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-container {
+  display: flex;
+  gap: 20px;
+}
+.link-container > a {
+  text-decoration: none;
+  color: gray;
+  border: 1px solid gray;
+  padding: 6px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.link-container > a :hover {
+  cursor: pointer;
+}
+
+/* sidebar */
+.manu-item {
+  display: flex;
+  flex-direction: column;
+}
+.sub-manu {
+  display: flex;
+  padding: 16px 0 10px 0;
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 82%;
+  align-self: flex-end;
+}
+.sub-manu.close {
+  display: none;
+}
+.sidebar {
+  height: 100%;
+  padding: 20px 0 10px 6px;
+  background-color: #212529;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .add{
+
+  position: fixed;
+  top: 12%;
+  right: 2%;
+  z-index: 99;
+} */
+
+.manu-item {
+  display: flex;
+  justify-content: center;
+  min-height: 6%;
+  color: white;
+  cursor: pointer;
+}
+.manu-item-title {
+  display: flex;
+
+  height: 100%;
+  padding-left: 16px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.manu-item-title:hover {
+  background-color: #3b3f46;
+}
+
+.collaps-btn {
+  /* margin: 0 10px 10px 0; */
+  display: flex;
+  justify-content: right;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 850px) {
+  /* navbar */
+  .navbar-container > :first-child {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* background-color:blue */
+  }
+
+  .navbar-left {
+    display: block;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    color: gray;
+    border: 2px soild red;
+    padding: 0;
+    border-radius: 0;
+    font-size: 0.8rem;
+  }
+}
+
+/* pages */
+
+.page-container {
+  padding: 2.8%;
+  height: 100%;
+  overflow: scroll;
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  margin-bottom: 2%;
+}
+.page-header > h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.page-content {
+  overflow: hidden;
+}
+
+.col {
+  margin: 10px 0;
+}
+
+/* dashboard */
+
+.dashbodar-card {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: 144px;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  flex-wrap: wrap;
+  margin: 18px 20px 40px 20px;
+  gap: 40px;
+}
+
+.card-container {
+  width: 40%;
+  min-width: 300px;
+  max-height: 144px;
+  max-width: 400px;
+}
+
+.short-cuts {
+  /* width: 40%; */
+  padding: 20px;
+}
+
+.shortcut-box {
+  display: flex;
+  justify-content: space-around;
+  gap: 6%;
+}
+
+.shortcut-paper {
+  padding: 20px;
+  width: 30%;
+  max-width: 150px;
+  /* min-width: 120px; */
+}
+
+.dashboard-lower {
+  display: flex;
+  justify-content: space-around;
+}
+
+.updates {
+  width: 40%;
+  height: 100%;
+}
+
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Works for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
